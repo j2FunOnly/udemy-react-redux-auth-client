@@ -8,6 +8,7 @@ import reduxThunk from 'redux-thunk';
 import App from './components/App';
 import Welcome from './components/Welcome';
 import Signup from './components/auth/Signup';
+import Signin from './components/auth/Signin';
 import Signout from './components/auth/Signout';
 import Feature from './components/Feature';
 
@@ -27,6 +28,7 @@ ReactDOM.render(
       <App>
         <Route path='/' component={Welcome} exact/>
         <Route path='/signup' component={Signup} />
+        <Route path='/signin' component={Signin} />
         <Route path='/signout' component={Signout} />
         <Route path='/feature' component={Feature} />
       </App>
